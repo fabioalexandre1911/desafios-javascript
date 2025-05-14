@@ -20,3 +20,19 @@
 console.log(isLeapYear(2015)) // false
 console.log(isLeapYear(2020)) // true           
 console.log(isLeapYear(2017)) // false
+
+// Contribuição
+
+function enBissexto(ano) {
+    if((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)){
+        return true;
+    } else {
+        return false;
+    }
+    
+    }
+
+console.log(ehBissexto(2024)); // true
+console.log(ehBissexto(1900)); // false
+console.log(ehBissexto(2000)); // true
+console.log(ehBissexto(2023)); // false
